@@ -1,0 +1,12 @@
+$bg-color: #444b6e;
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem 0rem;
+  background-color: $bg-color;
+  margin-top: 4rem;
+}
