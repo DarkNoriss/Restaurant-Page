@@ -5,7 +5,7 @@ export const home = () => {
   header();
   info();
   hours();
-  // location();
+  location();
 };
 
 const header = () => {
@@ -27,7 +27,7 @@ const info = () => {
 
   const homeInfoText = document.createElement("p");
   homeInfoText.innerText =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id magna sed velit viverra placerat non sed purus. Sed tempor pulvinar eros, ut placerat orci porta quis. Nulla eleifend nisl ut leo egestas, vitae vehicula nisl pulvinar. Maecenas sit amet porttitor libero. Suspendisse viverra efficitur dignissim. Cras sed consequat quam. Cras eleifend scelerisque sapien vitae aliquam. Donec id mi nibh. Curabitur lectus augue, imperdiet vitae sapien in, aliquet porttitor erat. In lacinia, orci vel elementum sodales, mi augue gravida magna, ut mattis ex mauris id risus. Etiam sagittis leo quis metus molestie vulputate. Aenean venenatis commodo lacus, sed semper tortor maximus vitae. Sed pellentesque venenatis lobortis. Praesent leo erat, pulvinar sed elit quis, hendrerit vulputate diam. Curabitur venenatis mi at mauris aliquam congue.";
+    "Welcome to our Spaghetti Bolognese Shop, where we serve delicious and authentic Italian cuisine. Our specialty is the classic Spaghetti Bolognese, made with fresh and high-quality ingredients.";
   homeInfo.append(homeInfoText);
 
   getMainContainer().append(homeInfo);
@@ -40,7 +40,7 @@ const hours = () => {
 
   const homeHoursHeader = document.createElement("h2");
   homeHoursHeader.classList.add("hours-header");
-  homeHoursHeader.innerText = "Hours";
+  homeHoursHeader.innerText = "We are open";
   homeHours.append(homeHoursHeader);
 
   const homeHoursDay = document.createElement("div");
@@ -78,6 +78,21 @@ const hours = () => {
   getMainContainer().append(homeHours);
 };
 
-const locatiion = () => {};
+const location = () => {
+  // Our shop is located in the heart of the city, at 123 Main Street.
+  const homeLocation = document.createElement("div");
+  homeLocation.classList.add("divLocation");
+  homeLocation.classList.add("rounded");
+
+  const homeLocationHeader = document.createElement("h2");
+  homeLocationHeader.innerText = "Our shop is located at";
+  homeLocation.append(homeLocationHeader);
+
+  const homeLocationText = document.createElement("p");
+  homeLocationText.innerText = "123 Main Street, Poznan";
+  homeLocation.append(homeLocationText);
+
+  getMainContainer().append(homeLocation);
+};
 
 const getMainContainer = () => document.querySelector(".mainContainer");

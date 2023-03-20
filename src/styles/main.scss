@@ -13,12 +13,12 @@ body {
 #content {
   display: flex;
   justify-content: center;
-  min-height: calc(100vh - 107px - 35.2px);
+  min-height: calc(100vh - 107px - 48px - 4rem);
+  padding: 2rem 4rem;
 
   & .mainContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
     background-color: $bg-color;
