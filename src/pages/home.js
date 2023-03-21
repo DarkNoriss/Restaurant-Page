@@ -1,4 +1,5 @@
 import { createContainer } from "../functions/container";
+import { getMainContainer } from "../functions/getMainContainer";
 
 export const home = () => {
   createContainer();
@@ -94,5 +95,3 @@ const location = () => {
 
   getMainContainer().append(homeLocation);
 };
-
-const getMainContainer = () => document.querySelector(".mainContainer");

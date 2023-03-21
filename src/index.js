@@ -4,6 +4,7 @@ import "./styles/home.scss";
 import "./styles/footer.scss";
 import { header } from "./functions/header.js";
 import { home } from "./pages/home.js";
+import { menu } from "./pages/menu";
 import { footer } from "./functions/footer.js";
 
 let currentPage = "Home";
@@ -31,6 +32,7 @@ const changePage = (event) => {
     home();
   } else if (switchTo == "Menu") {
     removePage();
+    menu();
   } else {
     removePage();
   }
