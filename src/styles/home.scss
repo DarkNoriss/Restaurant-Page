@@ -1,8 +1,4 @@
-$bg-color: #708b75;
-
 .divHeader {
-  padding: 1rem 2rem;
-  background-color: $bg-color;
   max-width: 40rem;
 
   & h1 {
@@ -13,19 +9,14 @@ $bg-color: #708b75;
 }
 
 .divInfo {
-  background-color: $bg-color;
-  padding: 1rem 4rem;
   max-width: 20rem;
-
   & p {
     font-size: 1.25rem;
   }
 }
 
 .divHours {
-  background-color: $bg-color;
   max-width: 20rem;
-  padding: 1rem 4rem;
   display: flex;
   flex-direction: column;
 
@@ -45,8 +36,6 @@ $bg-color: #708b75;
 }
 
 .divLocation {
-  background-color: $bg-color;
-  padding: 1rem 4rem;
   max-width: 20rem;
   display: flex;
   flex-direction: column;
