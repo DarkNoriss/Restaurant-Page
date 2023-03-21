@@ -6,6 +6,7 @@ import "./styles/footer.scss";
 import { header } from "./functions/header.js";
 import { home } from "./pages/home.js";
 import { menu } from "./pages/menu";
+import { contact } from "./pages/contact";
 import { footer } from "./functions/footer.js";
 
 let currentPage = "Home";
@@ -36,6 +37,7 @@ const changePage = (event) => {
     menu();
   } else {
     removePage();
+    contact();
   }
   currentPage = switchTo;
 };
