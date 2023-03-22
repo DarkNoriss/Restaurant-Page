@@ -1,7 +1,24 @@
+$border-color: #f8f991;
+
+.divHeader {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 10px;
+}
+
+.menuCont {
+  margin-top: 20px;
+}
+
 .divTitle {
-  font-size: 1.5rem;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .itemText {
-  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.desc {
+  margin-bottom: 0;
 }

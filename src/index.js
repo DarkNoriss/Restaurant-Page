@@ -1,8 +1,7 @@
 import "./styles/main.scss";
 import "./styles/header.scss";
-import "./styles/home.scss";
-import "./styles/menu.scss";
 import "./styles/footer.scss";
+import "./styles/menu.scss";
 import { header } from "./functions/header.js";
 import { home } from "./pages/home.js";
 import { menu } from "./pages/menu";

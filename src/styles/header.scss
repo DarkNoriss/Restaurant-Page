@@ -1,26 +1,29 @@
 $bg-color: #444b6e;
-$idk: #708b75;
+$hover-color: #3d315b;
 
 #header {
-  width: 100%;
   background-color: $bg-color;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  color: #fff;
+  padding: 20px;
+}
 
-  & nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+#header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-    & div {
-      display: flex;
-      justify-content: center;
-      height: 100%;
-      width: 8rem;
-      background-color: $idk;
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-  }
+#header div {
+  width: 10rem;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#header div:hover {
+  background-color: $hover-color;
 }

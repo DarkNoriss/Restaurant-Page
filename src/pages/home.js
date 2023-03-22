@@ -12,8 +12,6 @@ export const home = () => {
 const header = () => {
   const homeHeader = document.createElement("div");
   homeHeader.classList.add("divHeader");
-  homeHeader.classList.add("background");
-
   const homeHeaderText = document.createElement("h1");
   homeHeaderText.innerText = "Misia's spaghetti bolognese";
   homeHeader.append(homeHeaderText);
@@ -24,7 +22,6 @@ const header = () => {
 const info = () => {
   const homeInfo = document.createElement("div");
   homeInfo.classList.add("divInfo");
-  homeInfo.classList.add("background");
 
   const homeInfoText = document.createElement("p");
   homeInfoText.innerText =
@@ -37,7 +34,6 @@ const info = () => {
 const hours = () => {
   const homeHours = document.createElement("div");
   homeHours.classList.add("divHours");
-  homeHours.classList.add("background");
 
   const homeHoursHeader = document.createElement("h2");
   homeHoursHeader.classList.add("hours-header");
@@ -83,7 +79,6 @@ const location = () => {
   // Our shop is located in the heart of the city, at 123 Main Street.
   const homeLocation = document.createElement("div");
   homeLocation.classList.add("divLocation");
-  homeLocation.classList.add("background");
 
   const homeLocationHeader = document.createElement("h2");
   homeLocationHeader.innerText = "Our shop is located at";
