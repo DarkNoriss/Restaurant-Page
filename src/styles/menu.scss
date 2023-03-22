@@ -2,19 +2,19 @@ $border-color: #f8f991;
 
 .menuCont {
   margin-top: 20px;
-}
 
-.divTitle {
-  border-bottom: 1px solid $border-color;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  font-size: 1.5rem;
-}
+  & .divTitle {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+  }
 
-.itemText {
-  font-weight: bold;
-}
+  & .itemText {
+    font-weight: bold;
+  }
 
-.desc {
-  margin-bottom: 0;
+  & .desc {
+    margin-bottom: 0;
+  }
 }
