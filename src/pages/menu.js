@@ -1,21 +1,11 @@
 import { createContainer } from "../functions/container";
+import { createHeader } from "../functions/createHeader";
 import { getMainContainer } from "../functions/getMainContainer";
 
 export const menu = () => {
   createContainer();
-  header();
+  createHeader("Menu");
   list();
-};
-
-const header = () => {
-  const menuHeader = document.createElement("div");
-  menuHeader.classList.add("divHeader");
-
-  const menuHeaderText = document.createElement("h1");
-  menuHeaderText.innerText = "Menu";
-  menuHeader.append(menuHeaderText);
-
-  getMainContainer().append(menuHeader);
 };
 
 const list = () => {

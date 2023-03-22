@@ -1,22 +1,13 @@
 import { createContainer } from "../functions/container";
+import { createHeader } from "../functions/createHeader";
 import { getMainContainer } from "../functions/getMainContainer";
 
 export const home = () => {
   createContainer();
-  header();
+  createHeader("Misia's spaghetti");
   info();
   hours();
   location();
-};
-
-const header = () => {
-  const homeHeader = document.createElement("div");
-  homeHeader.classList.add("divHeader");
-  const homeHeaderText = document.createElement("h1");
-  homeHeaderText.innerText = "Misia's spaghetti";
-  homeHeader.append(homeHeaderText);
-
-  getMainContainer().append(homeHeader);
 };
 
 const info = () => {

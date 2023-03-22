@@ -1,0 +1,25 @@
+$border-color: #f8f991;
+
+.divInfo {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.divHours {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+
+  & .hours-days {
+    font-size: 1rem;
+  }
+}
+
+.divLocation {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+}
