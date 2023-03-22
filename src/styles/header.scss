@@ -5,25 +5,28 @@ $hover-color: #3d315b;
   background-color: $bg-color;
   color: #fff;
   padding: 20px;
-}
 
-#header nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
+  & nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 
-#header div {
-  width: 10rem;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-align: center;
-  font-size: 2rem;
-}
+  & div {
+    width: 10rem;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-size: 2rem;
 
-#header div:hover {
-  background-color: $hover-color;
+    & p {
+      margin: 0;
+    }
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
 }

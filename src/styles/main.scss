@@ -1,10 +1,6 @@
 $mainbg-color: #3d315b;
 $bg-color: #9ab87a;
-
-html {
-  position: relative;
-  min-height: 100%;
-}
+$border-color: #f8f991;
 
 body {
   margin: 0;
@@ -12,18 +8,29 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  background-color: $mainbg-color;
 }
 
 #content {
   margin: 20px auto;
   max-width: 800px;
+  min-height: calc(100vh - 97px - 50px - 40px);
   flex: 1;
 
   & .mainContainer {
     background-color: $bg-color;
     border-radius: 1rem;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 2rem 4rem;
+
+    & .divHeader {
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 10px;
+      font-size: 2rem;
+      text-align: center;
+
+      & h1 {
+        margin: 10px 0;
+      }
+    }
   }
 }

@@ -13,7 +13,7 @@ const header = () => {
   const homeHeader = document.createElement("div");
   homeHeader.classList.add("divHeader");
   const homeHeaderText = document.createElement("h1");
-  homeHeaderText.innerText = "Misia's spaghetti bolognese";
+  homeHeaderText.innerText = "Misia's spaghetti";
   homeHeader.append(homeHeaderText);
 
   getMainContainer().append(homeHeader);

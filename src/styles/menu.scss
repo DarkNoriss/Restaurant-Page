@@ -1,10 +1,5 @@
 $border-color: #f8f991;
 
-.divHeader {
-  border-bottom: 1px solid $border-color;
-  padding-bottom: 10px;
-}
-
 .menuCont {
   margin-top: 20px;
 }
@@ -13,6 +8,7 @@ $border-color: #f8f991;
   border-bottom: 1px solid $border-color;
   margin-bottom: 10px;
   padding-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .itemText {
